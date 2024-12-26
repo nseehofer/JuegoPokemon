@@ -1,0 +1,289 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'FuentePokemon';
+    src: url('../fuente/PokemonHollow.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body-pokemon {
+    background-image: url(../imagenes/pokemon-emerald-wallpaper-estatico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 70%;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: overlay;
+    font-family: 'FuentePokemon', sans-serif;
+}
+
+.div-principal,
+.div-titulo,
+.div-selector,
+.div-combatir {
+    width: 100%;
+}
+
+.div-principal,
+.div-selector,
+.div-boton-selector,
+.modal-pokemon,
+.div-modal-1,
+.div-modal-2,
+.div-modal-detalle {
+    display: flex;
+}
+
+.div-principal,
+.div-modal-detalle {
+    flex-direction: column;
+}
+
+.titulo{
+    color: white;
+    text-shadow: 3px 3px black;
+    letter-spacing: 7px;
+    font-size: x-large;
+}
+
+
+
+.div-principal {
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.div-titulo {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: brown;
+    font-family: 'FuentePokemon'
+}
+
+.div-selector {
+    justify-content: space-around;
+}
+
+.div-pokemon {
+    width: 20%;
+    position: relative;
+}
+
+.div-contenedor-img-pokemon img {
+    width: 100%;
+    height: auto;
+}
+
+.div-boton-selector {
+    justify-content: center;
+}
+
+.boton-selector {
+    border-radius: 1rem;
+    color: transparent;
+    border-color: brown;
+    cursor:pointer;
+    
+}
+
+.boton-selector:hover{
+    box-shadow: 1.5px 1.5px black;
+}
+
+.boton-ver-pokemon {
+    position: absolute;
+    top: -2%;
+    right: 14%;
+    padding:1%;
+    font-weight: 600;
+    font-size: large;
+    background-color: transparent;
+    color:black;
+    cursor:pointer;
+    border:3px solid brown
+}
+
+
+.boton-ver-pokemon:hover{
+    box-shadow: 1.5px 1.5px black;
+}
+
+
+#boton-combate {
+    width: fit-content;
+    position: relative;
+    left: 45%;
+    padding: 0.7%;
+    border: 2px solid red;
+    font-weight: bold;
+    background: white;
+}
+
+.btn-combate:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px black;
+}
+
+
+/*ESTILO MODAL */
+
+.js-modal-pokemon {
+    flex-direction: column-reverse;
+    left: 25%;
+    top: 10%;
+}
+
+.nombre-del-pokemon {
+    text-align: center;
+}
+
+.div-modal-2 {
+    justify-content: flex-end;
+    gap: 35%;
+}
+
+/* VISTA DE COMBATE */
+
+.body-combate-pokemon,
+.div-rival,
+.div-usuario,
+.div-accion-usuario {
+    display: flex;
+}
+
+.body-combate-pokemon,
+.div-accion-usuario {
+    flex-direction: column;
+}
+
+
+
+.div-rival {
+    justify-content: flex-end;
+    position: relative;
+}
+
+.div-usuario {
+    justify-content: flex-start;
+    position: relative;
+    gap: 5%;
+}
+
+.div-accion-usuario {
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+}
+
+.div-accion-usuario button {
+    font-size: large;
+}
+
+
+.figure-combate {
+    width: 20%;
+}
+
+.figure-combate img {
+    width: 100%;
+    height: auto;
+}
+
+.p-energia-rival {
+    position: absolute;
+    bottom: -5%;
+    right: 8%;
+}
+
+.p-energia-usuario {
+    position: absolute;
+    bottom: -2%;
+    left: 5%;
+}
+
+.p-energia-rival,
+.p-energia-usuario {
+    height: fit-content;
+}
+
+/* MODAL */
+
+.modal-poderes {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 30vh;
+    height: 30vh;
+}
+
+.estilo-poderes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton-poderes {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid red;
+    padding: 2%;
+    text-wrap-mode: nowrap;
+}
+
+.boton-poderes:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px grey;
+}
+
+
+
+/* ANIMACION IMAGEN*/
+
+.mover-imagen {
+    position: relative;
+    left: 300%;
+    top: -50%;
+}
+
+.mover-imagen-rival {
+    position: relative;
+    right: 300%;
+    bottom: -50%;
+}
+
+
+/*CARTEL TURNO*/
+
+.cartel-turno {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 35%;
+    background: black;
+    color: white;
+    font-family: 'FuentePokemon';
+    opacity: 0;
+    transition: 1s;
+}
+
+.nombre-pokemon-de-turno {
+    color: yellow;
+}
+
+.ataque {
+    color: red;
+}
+
+.ganador {
+    color: green;
+}
+
+.combate {
+    color: chartreuse;
+}

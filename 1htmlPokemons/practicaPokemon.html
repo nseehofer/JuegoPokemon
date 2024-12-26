@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeJuego</title>
+    <link rel="stylesheet" href="../1cssPokemons/cssPracticaPokemon.css" />
+</head>
+
+<body class="body-pokemon">
+    <div class="div-principal">
+        <div class="div-titulo" style="display:flex; justify-content: center; gap:1%">
+            <p class="titulo" style ="align-self: center;"> Elige un pokemon para jugar</p>
+            <img src="../imagenes/cerrar.png" style="height:6vh; align-self: center;">
+        </div>
+        <div class="div-selector">
+            <div class="div-pokemon">
+                <div class="div-contenedor-img-pokemon"> <img class="img-pokemon"
+                        src="../imagenes/bolbasaur.png"><button class="boton-ver-pokemon"
+                        id="ver-bolbasaur">Ver</button>
+                    <dialog class="js-modal-pokemon Bulbasaur">
+                        <div class="div-modal-2">
+                            <button id="guardar">Guardar</button>
+                            <button class="js-cerrar-modal" id="Bulbasaur">Cerrar</button>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="div-boton-selector"><button class="boton-selector Bulbasaur">__</button></div>
+            </div>
+            <div class="div-pokemon">
+                <div class="div-contenedor-img-pokemon"> <img src="../imagenes/charmander.png"><button
+                        class="boton-ver-pokemon" id="ver-charmander">Ver</button></div>
+                <dialog class="js-modal-pokemon Charmander">
+
+                    <div class="div-modal-2">
+                        <button id="guardar">Guardar</button>
+                        <button class="js-cerrar-modal" id="Charmander">Cerrar</button>
+                    </div>
+                </dialog>
+                <div class="div-boton-selector"><button class="boton-selector Charmander">__</button></div>
+            </div>
+            <div class="div-pokemon">
+                <div class="div-contenedor-img-pokemon"><img src="../imagenes/squartle.png"><button
+                        class="boton-ver-pokemon" id="ver-squartle">Ver</button></div>
+                <dialog class="js-modal-pokemon Squartle">
+                    <div class="div-modal-2">
+                        <button id="guardar">Guardar</button>
+                        <button class="js-cerrar-modal" id="Squartle">Cerrar</button>
+                    </div>
+                </dialog>
+                <div class="div-boton-selector"><button class="boton-selector Squartle">__</button></div>
+            </div>
+            <div class="div-pokemon">
+                <div class="div-contenedor-img-pokemon"><img src="../imagenes/pikachu.png"><button
+                        class="boton-ver-pokemon" id="ver-pikachu">Ver</button></div>
+                <dialog class="js-modal-pokemon Pikachu">
+
+                    <div class="div-modal-2">
+                        <button id="guardar">Guardar</button>
+                        <button class="js-cerrar-modal" id="Pikachu">Cerrar</button>
+                    </div>
+                </dialog>
+                <div class="div-boton-selector"><button class="boton-selector Pikachu">__</button></div>
+            </div>
+        </div>
+        <button id="boton-combate" disabled>Combatir</button>
+    </div>
+</body>
+<script src="../1jsPokemons/jsPracticaPokemon.js"></script>
+
+</html>

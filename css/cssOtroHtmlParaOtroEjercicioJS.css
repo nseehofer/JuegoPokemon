@@ -1,0 +1,46 @@
+
+*{
+    margin:0%;
+    padding:0%;
+    }
+    
+    body, form,section {
+        display: flex;
+        justify-content: center;
+    }
+    
+    body {
+    flex-direction: column;
+    height:100vh;
+    width:100%;
+    gap:5%;
+    }
+    
+    form{
+    gap: 1%;
+    padding-top:15vh;
+    }
+    
+    section {
+    width: 100%;
+        height: 100vh;
+        gap: 5%;
+        flex-wrap: wrap;
+
+    }
+    
+    div {
+        width: 30%;
+    height: 10%;
+    }
+    
+    div p {
+        text-align: center;
+        width: 90%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .oculto{
+        display:none;
+    }

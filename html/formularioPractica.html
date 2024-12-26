@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de practica</title>
+    <link rel="stylesheet" href="../css/cssEstiloFormularioPractica.css" />
+</head>
+
+<body>
+    <form action="./enviarFormAca.html" method="post" enctype="multipart/form-data"
+        class="form-practica js-form-practica">
+        <div class="div-practica js-div-practica">
+            <div>
+                <label for="usuario">Usuario: </label>
+                <input type="text" name="usuario" id="usuario">
+            </div>
+
+            <div>
+                <label for="clave">Clave: </label>
+                <input type="password" name="clave" id="clave">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+        </div>
+        <div class="div2-practica js-div2-practica">
+            <button type="submit" class="submit-practica js-submit-practica">Registrar</submit>
+                <button type="button" class="btn-practica js-btn-practica">Borrar todo</button>
+        </div>
+    </form>
+    <p class="mensaje-error"></p>
+    <p class="registro-exitoso"></p>
+</body>
+<script src="../js/jsFormularioPractica.js"></script>
+
+</html>
