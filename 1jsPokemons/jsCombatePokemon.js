@@ -78,7 +78,7 @@ const nodoCartelGanador = document.querySelector('.js-ganador');
 let primerAtaque = null;
 
 nodoBtnRendirse.addEventListener('click', (e) => {
-    window.location.href = `./practicaPokemon.html`;
+    window.location.href = `./index.html`;
 });
 
 nodoBtnLanzarPoder.addEventListener('click', (e) => {
