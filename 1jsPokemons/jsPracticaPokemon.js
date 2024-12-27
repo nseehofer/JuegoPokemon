@@ -327,7 +327,7 @@ btnCombate.addEventListener('click', (e) => {
         pokemonRival: nombrePokemonElegidoPorAlAzar
     });
 
-    window.location.href = `../1htmlPokemons/combatePokemon.html?${parametros.toString()}`;
+    window.location.href = `./1htmlPokemons/combatePokemon.html?${parametros.toString()}`;
 });
 
 
